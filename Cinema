@@ -16,7 +16,7 @@ int main () {
     printf("\n ******************************************");//questão estética
     printf("\n *Quantas pessoas assistiram ao filme?            ");//pergunta direta ao usuário, afim de obter o valor da variável
     scanf("%d", &QPessoas);//armazenar o valor da variável no endereço explícito
-    if(QPessoas >= 2) { //condicional para delimitar o mínimo de pessoas
+    if(QPessoas >= 10) { //condicional para delimitar o mínimo de pessoas
         for(contador = 1; contador <= QPessoas; contador++) { //loop, para repetir o processo abaixo até que a condicional seja satisfeita
             printf("\n Qual o sexo da %d * pessoa? M ou F?          ", contador);//pergunta direta ao usuário, afim de obter o valor da variável
             scanf("%s", &sexo);//armazenar o valor da variável no endereço explícito
@@ -40,7 +40,7 @@ int main () {
                 printf("\n Idade invalida, por ser ``maior que 100`` ou, ``menor que 3`` ");//informar ao usuario o caso de erro
                 return;//cessar todas as funções
              } if(idade >= 3 && idade <= 13) {//condicional para fazer a contagem
-                 idadeC = idadeC + 1;//contagem
+                idadeC = idadeC + 1;//contagem
              } else if(idade >= 14 && idade <= 17) {//condicional para fazer a contagem
                 idadeAdo = idadeAdo + 1;//contagem
             } else if(idade >= 18 && idade <= 64) {//condicional para fazer a contagem
@@ -67,7 +67,7 @@ int main () {
     
     printf("\n Quantas sessoes foram assistidas?            ");//pergunta direta ao usuário, afim de obter o valor da variável
     scanf("%d", &QSessoes);//armazenar o valor da variável no endereço explícito
-    if (QSessoes < 2 || QSessoes > 2) {//condicional para delimitar a quantidade de sessões
+    if (QSessoes != 2) {//condicional para delimitar a quantidade de sessões
         printf("\n Quantidade invalida de sessoes, devem ser 2");//informar ao usuario o caso de erro
         return;//cessar todas as funções
     }
@@ -109,3 +109,4 @@ int main () {
  
 //system("cls"); 
 //printf("\33[H\33[2J");
+
