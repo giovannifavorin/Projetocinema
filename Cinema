@@ -74,15 +74,15 @@ int main () {
     getchar();//sinceramente, n sei bem a função especifica disso, mas ele serviu pra impedir bugs nos próximos dois printf, então, pra mim ele serviu pra impedir bugs
     printf("\n Qual o nome do filme da primeira sessao?         ");//pergunta direta ao usuário, afim de obter o valor da variável
     fgets(sessao1, 100,  stdin);//armazenar as variaveis strings no endereço citado
-    if(strlen(sessao1) == 1) {//condicional para impedir respostas vazias
-    printf("Nome invalido");//informar ao usuario o caso de erro
-    return;//cessar todas as funções
+        if(strlen(sessao1) == 1) {//condicional para impedir respostas vazias
+            printf("Nome invalido");//informar ao usuario o caso de erro
+            return;//cessar todas as funções
     }
     printf("\n Qual o nome do filme da segunda sessao?          ");//pergunta direta ao usuário, afim de obter o valor da variável
     fgets(sessao2, 100, stdin);//armazenar as variaveis strings no endereço citado
-     if(strlen(sessao2) == 1) {//condicional para impedir respostas vazias
-    printf("Nome invalido");//informar ao usuario o caso de erro
-    return;//cessar todas as funções
+        if(strlen(sessao2) == 1) {//condicional para impedir respostas vazias
+            printf("Nome invalido");//informar ao usuario o caso de erro
+            return;//cessar todas as funções
     }
 
     printf("\n ******************************************\n");//questão estetica
@@ -109,4 +109,5 @@ int main () {
  
 //system("cls"); 
 //printf("\33[H\33[2J");
+
 
